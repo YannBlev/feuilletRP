@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WOWD6</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="WOWD6CSS2.css">
+</head>
+<body>
+	<div id="barre">
+	</div>
+<main class="container">
+	<div>
+		<div id="nomDuJoueur">
+		</div>
+		<div id="backgroundStat">
+			<div class="stat">
+				<div class="imgIcon" id="statIconEndurance" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatEndurance">
+					<div class="statBase">
+						<div class="statNomPuissance">
+							<p>Endurance
+							</p>
+						</div>
+						<div class="textStatModifie">
+							<p class="statPuissance" id="statModifieEndurance">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHautPuissance" id="miniFlecheHautEndurance" src="miniFlecheHaut.png">
+							<img class="miniFlecheBasPuissance" id="miniFlecheBasEndurance" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconResilience" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatToucher">
+					<p class="statBaseToucher">Toucher&nbsp;[<i>bonus</i>]
+					</p>
+					<div class="statSpecialToucher" id="">
+						<div class="statToucher">
+							<p>Physique
+							</p>
+						</div>
+						<div class="textStatModifieToucher">
+							<output class="statResistanceBonus" id="bonusToucherPhysique">0
+							</output>
+						</div>
+					</div>
+					<div class="statSpecialToucher" id="">
+						<div class="statToucher">
+							<p>Magique
+							</p>
+						</div>
+						<div class="textStatModifieToucher">
+							<output class="statResistanceBonus" id="bonusToucherMagique">0
+							</output>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconResistance" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatResistance">
+					<p class="statBaseToucher">Resistance
+					</p>
+					<div class="statSpecialToucher" id="">
+						<div class="statToucher">
+							<p>Physique
+							</p>
+						</div>
+						<div class="textStatModifieToucher">
+							<output class="statResistanceBonus" id="statModifieResistance">0
+							</output>
+						</div>
+					</div>
+					<div class="statSpecialToucher" id="">
+						<div class="statToucher">
+							<p>Magique
+							</p>
+						</div>
+						<div class="textStatModifieToucher">
+							<output class="statResistanceBonus" id="statModifieResilience">0
+							</output>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="barreDeSeparation">
+		</div>
+		<div id="backgroundStat">
+			<div class="stat">
+				<div class="imgIcon" id="statIconPuissancePhysique" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatPuissancePhysique">
+					<div class="statBase">
+						<div class="statNomPuissance">
+							<p>Puissance physique
+							</p>
+						</div>
+						<div class="textStatModifie">
+							<p class="statPuissance" id="statModifiePuissancePhysique">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHautPuissance" id="miniFlecheHautPuissancePhysique" src="miniFlecheHaut.png">
+							<img class="miniFlecheBasPuissance" id="miniFlecheBasPuissancePhysique" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconPuissanceNeutre" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatPuissanceNeutre">
+					<div class="statBase">
+						<div class="statNomPuissance">
+							<p>Puissance neutre
+							</p>
+						</div>
+						<div class="textStatModifie">
+							<p class="statPuissance" id="statModifiePuissanceNeutre">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHautPuissance" id="miniFlecheHautPuissanceNeutre" src="miniFlecheHaut.png">
+							<img class="miniFlecheBasPuissance" id="miniFlecheBasPuissanceNeutre" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconPuissanceMagique" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatPuissanceMagique">
+					<div class="statBase">
+						<div class="statNomPuissance">
+							<p>Puissance magique
+							</p>
+						</div>
+						<div class="textStatModifie">
+							<p class="statPuissance" id="statModifiePuissanceMagique">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHautPuissance" id="miniFlecheHautPuissanceMagique" src="miniFlecheHaut.png">
+							<img class="miniFlecheBasPuissance" id="miniFlecheBasPuissanceMagique" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="barreDeSeparation">
+		</div>
+		<div id="backgroundStat">
+			<div class="stat">
+				<div class="imgIcon" id="statIconForce" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatForce">
+					<div class="statBase" id="statBaseForce">
+						<div class="statNom">
+							<p>Force
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautForce" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieForce">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreForce">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeForce">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreForce">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipForce">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasForce" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconPerception" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatPerception">
+					<div class="statBase" id="statBasePerception">
+						<div class="statNom">
+							<p>Perception
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautPerception" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifiePerception">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombrePerception">0
+							</output>
+					</div>
+					<div class="statModifieDe">
+						<p id="statModifieDePerception">0
+						</p>
+					</div>
+					<div class="statModifieEntre">
+						<p id="statModifieEntrePerception">D+
+						</p>
+					</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipPerception">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasPerception" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconIntelligence" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatIntelligence">
+					<div class="statBase" id="statBaseIntelligence">
+						<div class="statNom">
+							<p>Intelligence
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautIntelligence" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieIntelligence">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreIntelligence">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeIntelligence">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreIntelligence">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipIntelligence">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasIntelligence" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconAgilite" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatAgilite">
+					<div class="statBase" id="statBaseAgilite">
+						<div class="statNom">
+							<p>Agilité
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautAgilite" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieAgilite">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreAgilite">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeAgilite">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreAgilite">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipAgilite">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasAgilite" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconDexterite" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatDexterite">
+					<div class="statBase" id="statBaseDexterite">
+						<div class="statNom">
+							<p>Dextérité
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautDexterite" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieDexterite">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreDexterite">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeDexterite">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreDexterite">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipDexterite">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasDexterite" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconEsprit" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatEsprit">
+					<div class="statBase" id="statBaseEsprit">
+						<div class="statNom">
+							<p>Esprit
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautEsprit" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieEsprit">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreEsprit">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeEsprit">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreEsprit">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipEsprit">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasEsprit" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconCharisme" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatCharisme">
+					<div class="statBase" id="statBaseCharisme">
+						<div class="statNom">
+							<p>Charisme
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautCharisme" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieCharisme">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreCharisme">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeCharisme">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreCharisme">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipCharisme">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasCharisme" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stat">
+
+			</div>
+			<div class="stat">
+				<div class="imgIcon" id="statIconMoral" value="off"><img src="default2.png">
+				</div>
+				<div class="cadreStat" id="cadreStatMoral">
+					<div class="statBase" id="statBaseMoral">
+						<div class="statNom">
+							<p>Moral
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheHaut" id="miniFlecheHautMoral" src="miniFlecheHaut.png">
+						</div>
+					</div>
+					<div class="statModifie" id="statModifieMoral">
+						<div class="textStatModifie">
+							<output class="positionNombre" id="statModifieNombreMoral">0
+							</output>
+						</div>
+						<div class="statModifieDe">
+							<p id="statModifieDeMoral">0
+							</p>
+						</div>
+						<div class="statModifieEntre">
+							<p id="statModifieEntreMoral">D+
+							</p>
+						</div>
+						<div class="statModifiePip">
+							<p id="statModifiePipMoral">0
+							</p>
+						</div>
+						<div class="modifierStat">
+							<img class="miniFlecheBas" id="miniFlecheBasMoral" src="miniFlecheBas.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="espace">
+	</div>
+	<div class="espace">
+	</div>
+	<div id="imgTexte">
+		<div class="description" id="affichageEquipement">
+			<img class="imageArmure" src="armurerie2.png">
+			<h2 class="textDescription"><center>Equipement</center>
+			</h2>
+			<img class="imageArmure" src="armurerie3.png">
+			<div class="equipementArmure">
+				<div class="imageEtDescriptionEquipement">
+					<div>
+						<div>
+							<img id="imageArmure" src="aide2.png">
+						</div>
+						<div class="cadreAttributArme">
+							<div class="bonusToucherEtResistance">
+								<div>
+									<div>
+										<p class="pEtM">&nbsp;
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Phy.
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Mag.
+										</p>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Tch.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherPhysiqueArmure">+0
+										</output>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherMagiqueArmure">+0
+										</output>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Res.
+										</p>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResistanceArmure">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResilienceArmure">+0
+										</output>
+									</div>
+								</div>
+							</div>
+						</div>
+ 					</div>
+					<div class="selectionEtDescription">
+						<select class="selectSort" id="armureListe">
+							<option value="aide2.png">Armure</option>
+							<option value="torse2.png">Aucune armure</option>
+ 							<option value="tissu2.png">Armure en tissu</option>
+							<option value="cuir2.png">Armure en cuir</option>
+   							<option value="maille2.png">Armure en maille</option>
+							<option value="plaque2.png">Armure en plaque</option>
+						</select>
+						<div class="descriptionArmure">
+							<p id="armureDescription">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="imageArmure" src="miniBarre.png">
+			<div class="equipementArmure">
+				<div class="imageEtDescriptionEquipement">
+					<div>
+						<div>
+							<img id="imageArmeMainDroite" src="aide2.png">
+						</div>
+						<div class="cadreAttributArme">
+							<div class="bonusToucherEtResistance">
+								<div>
+									<div>
+										<p class="pEtM">&nbsp;
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Phy.
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Mag.
+										</p>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Tch.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherPhysiqueArmeMainDroite">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherMagiqueArmeMainDroite">+0
+										</output>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Res.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusResistanceArmeMainDroite">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResilienceArmeMainDroite">+0
+										</output>
+									</div>
+								</div>
+							</div>
+						</div>
+ 					</div>
+				<div class="selectionEtDescription">
+					<select class="selectSort" id="armeMainDroiteListe">
+						<option value="aide2.png">Arme - Main droite</option>
+						<option value="mainDroite2.png">Main nue</option>
+ 						<option value="pugilat.png">Arme de pugilat</option>
+						<option value="dague.png">Dague</option>
+   						<option value="epeeUneMain.png">Epée à une main</option>
+						<option value="hacheUneMain.png">Hache à une main</option>
+						<option value="masseUneMain.png">Masse à une main</option>
+   						<option value="epeeDeuxMains.png">Epée à deux mains</option>
+   						<option value="hacheDeuxMains.png">Hache à deux mains</option>
+   						<option value="masseDeuxMains.png">Masse à deux mains</option>
+   						<option value="lance.png">Arme d'hast</option>
+   						<option value="baguette.png">Baguette</option>
+   						<option value="baton.png">Sceptre magique</option>
+   						<option value="arc.png">Arc</option>
+   						<option value="fusil.png">Fusil</option>
+					</select>
+					<div class="descriptionSort">
+						<div class="textDescriptionArmeStatique">
+							<p>Attribut<br>Type<br>Coût
+							</p>
+						</div>
+						<div class="textDescriptionArmeModifiable">
+							<p id="descriptionArmeMainDroiteModifiable">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="imageArmure" src="miniBarre.png">
+		<div class="equipementArmure">
+			<div class="imageEtDescriptionEquipement">
+				<div>
+					<div>
+						<img id="imageArmeMainGauche" src="aide2.png">
+					</div>
+					<div class="cadreAttributArme">
+						<div class="bonusToucherEtResistance">
+								<div>
+									<div>
+										<p class="pEtM">&nbsp;
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Phy.
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Mag.
+										</p>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Tch.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherPhysiqueArmeMainGauche">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherMagiqueArmeMainGauche">+0
+										</output>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Res.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusResistanceArmeMainGauche">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResilienceArmeMainGauche">+0
+										</output>
+									</div>
+								</div>
+							</div>
+						</div>
+ 					</div>
+					<div class="selectionEtDescription">
+						<select class="selectSort" id="armeMainGaucheListe">
+							<option value="aide2.png">Arme - Main gauche</option>
+							<option value="mainGauche2.png">Main nue</option>
+ 							<option value="pugilatGauche.png">Arme de pugilat</option>
+							<option value="dague.png">Dague</option>
+   							<option value="epeeUneMain.png">Epée à une main</option>
+							<option value="hacheUneMain.png">Hache à une main</option>
+							<option value="masseUneMain.png">Masse à une main</option>
+   							<option value="baguette.png">Baguette</option>
+   							<option value="bouclier.png">Bouclier</option>
+						</select>
+						<div class="descriptionSort">
+							<div class="textDescriptionArmeStatique">
+								<p>Attribut<br>Type<br>Coût
+								</p>
+							</div>
+							<div class="textDescriptionArmeModifiable">
+								<p id="descriptionArmeMainGaucheModifiable">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="imageArmure" src="miniBarre2.png">
+		</div>
+		<div class="description" id="affichageClasse">
+			<img class="imageArmure" src="descriptionClasse01.png">
+			<h2 class="textDescription"><center>Guerrier</center>
+			</h2>
+			<img class="imageArmure" src="descriptionClasse02.png">
+			<div class="equipementArmure">
+				<div class="imageEtDescriptionEquipement">
+					<div>
+						<div>
+							<img id="imagePremierSort" src="aide2.png">
+						</div>
+						<div class="cadreAttributArme">
+							<div class="bonusToucherEtResistance">
+								<div>
+									<div>
+										<p class="pEtM">&nbsp;
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Phy.
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Mag.
+										</p>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Tch.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherPhysiquePremierSort">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherMagiquePremierSort">+0
+										</output>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Res.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusResistancePremierSort">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResiliencePremierSort">+0
+										</output>
+								</div>
+							</div>
+						</div>
+					</div>
+ 				</div>
+				<div class="selectionEtDescription">
+					<select class="selectSort" id="premierSortListe">
+						<option value="aide2.png">Premiere technique</option>
+						<option value="premierSort01.png">Arme Croque-roc</option>
+ 						<option value="premierSort02.png">Bouclier d'eau</option>
+						<option value="premierSort03.png">Expiation</option>
+					</select>
+					<div class="descriptionSort">
+						<div class="textDescriptionSortStatique">
+							<p>Type<br>Attribut<br>Ecole<br>Coût
+							</p>
+						</div>
+						<div class="textDescriptionSortModifiable">
+							<p id="premierSortDescriptionGauche">
+							</p>
+						</div>
+						<div class="textDescriptionSortStatique">
+							<p>Rech.<br>Incant.<br>Portée<br>Durée
+							</p>
+						</div>
+						<div class="textDescriptionSortModifiable">
+							<p id="premierSortDescriptionDroite">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cadreDescriptionSort">
+			<p class="descriptionEffetSort" id="descriptionEffetSortPremier">
+			</p>
+		</div>
+		<img class="imageArmure" src="miniBarre.png">
+		<div class="equipementArmure">
+			<div class="imageEtDescriptionEquipement">
+				<div>
+					<div>
+						<img id="imageDeuxiemeSort" src="aide2.png">
+					</div>
+					<div class="cadreAttributArme">
+						<div class="bonusToucherEtResistance">
+								<div>
+									<div>
+										<p class="pEtM">&nbsp;
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Phy.
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Mag.
+										</p>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Tch.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherPhysiqueDeuxiemeSort">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherMagiqueDeuxiemeSort">+0
+										</output>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Res.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusResistanceDeuxiemeSort">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResilienceDeuxiemeSort">+0
+										</output>
+									</div>
+								</div>
+							</div>
+						</div>
+ 					</div>
+					<div class="selectionEtDescription">
+						<select class="selectSort" id="deuxiemeSortListe">
+							<option value="aide2.png">Deuxieme technique</option>
+							<option value="deuxiemeSort01.png">Loup fantôme</option>
+ 							<option value="deuxiemeSort02.png">Chaîne d'éclairs</option>
+							<option value="deuxiemeSort03.png">Salve de guérison</option>
+						</select>
+						<div class="descriptionSort">
+							<div class="textDescriptionSortStatique">
+								<p>Type<br>Attribut<br>Ecole<br>Coût
+								</p>
+							</div>
+							<div class="textDescriptionSortModifiable">
+								<p id="deuxiemeSortDescriptionGauche">
+								</p>
+							</div>
+							<div class="textDescriptionSortStatique">
+								<p>Rech.<br>Incant.<br>Portée<br>Durée
+								</p>
+							</div>
+							<div class="textDescriptionSortModifiable">
+								<p id="deuxiemeSortDescriptionDroite">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cadreDescriptionSort">
+				<p class="descriptionEffetSort" id="descriptionEffetSortDeuxieme">
+				</p>
+			</div>
+			<img class="imageArmure" src="miniBarre.png">
+			<div class="equipementArmure">
+				<div class="imageEtDescriptionEquipement">
+					<div>
+						<div>
+							<img id="imageTroisiemeSort" src="aide2.png">
+						</div>
+						<div class="cadreAttributArme">
+							<div class="bonusToucherEtResistance">
+								<div>
+									<div>
+										<p class="pEtM">&nbsp;
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Phy.
+										</p>
+									</div>
+									<div>
+										<p class="pEtM">Mag.
+										</p>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Tch.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherPhysiqueTroisiemeSort">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusToucherMagiqueTroisiemeSort">+0
+										</output>
+									</div>
+								</div>
+ 								<div>
+									<div>
+										<p class="tEtR">Res.
+										</p>
+									</div>
+  									<div>
+										<output class="pEtMEtTEtR" id="bonusResistanceTroisiemeSort">+0
+										</output>
+									</div>
+									<div>
+										<output class="pEtMEtTEtR" id="bonusResilienceTroisiemeSort">+0
+										</output>
+									</div>
+								</div>
+							</div>
+						</div>
+ 					</div>
+					<div class="selectionEtDescription">
+						<select class="selectSort" id="troisiemeSortListe">
+							<option value="aide2.png">Troisieme technique</option>
+							<option value="troisiemeSort01.png">Furie sanguinaire</option>
+ 							<option value="troisiemeSort02.png">Totem d'élémentaire de terre</option>
+							<option value="troisiemeSort03.png">Esprit ancestral</option>
+						</select>
+						<div class="descriptionSort">
+							<div class="textDescriptionSortStatique">
+								<p>Type<br>Attribut<br>Ecole<br>Coût
+								</p>
+							</div>
+							<div class="textDescriptionSortModifiable">
+								<p id="troisiemeSortDescriptionGauche">
+								</p>
+							</div>
+							<div class="textDescriptionSortStatique">
+								<p>Rech.<br>Incant.<br>Portée<br>Durée
+								</p>
+							</div>
+							<div class="textDescriptionSortModifiable">
+								<p id="troisiemeSortDescriptionDroite">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cadreDescriptionSort">
+				<p class="descriptionEffetSort" id="descriptionEffetSortTroisieme">
+				</p>
+			</div>
+			<img class="imageArmure" src="descriptionClasse03.png">
+		</div>
+		<div class="description" id="affichageLore">
+			<img class="imageArmure" src="bibliotheque.png">
+			<h2 class="textDescription"><center>Bibliothèque</center>
+			</h2>
+			<img class="imageArmure" src="bibliotheque2.png">
+		</div>
+		<div class="description" id="affichageMetier">
+			<img class="imageArmure" src="atelier.png">
+			<h2 class="textDescription"><center>Métier</center>
+			</h2>
+			<img class="imageArmure" src="atelier2.png">
+		</div>
+		<div class="description" id="affichageSac">
+			<img class="imageArmure" src="sacfond01.png">
+			<h2 class="textDescription"><center>Sac</center>
+			</h2>
+			<img class="imageArmure" src="sacfond02.png">
+			<form name="formulaire">
+				<div>
+					<div class="container">
+						<div>
+							<p class="texteSac">Objet : 
+							</p>
+							<p class="texteSac">Effet : 
+							</p>
+						</div>
+						<div class="valeurSac">
+							<INPUT class="ecrireValeurSac" type="text" name="libelle" size=25 value="texte">
+							<INPUT class="ecrireValeurSac" type="text" name="valeur" size=25 value="texte">
+						</div>
+
+					</div>
+				</div>
+				<div class="dispositionSac">
+					<INPUT type="button" Value="Ajouter" onClick="Ajouter(this.form)">
+					<INPUT type="button" value="Supprimer" onClick="Supprimer(this.form.liste)">
+					<INPUT type="button" value="Supprimer tout" onClick="SupprimerTout(this.form.liste)">
+				</div>
+				<div>
+					<SELECT class="selectSac" align=top name="liste" size=3 onClick="alert(''+this.options[this.selectedIndex].text+' : '+this.options[this.selectedIndex].value)";>
+					</SELECT>
+				</div>
+			</form>
+			<div class="container">
+				<INPUT class="poPaPc" type="text" size=2><ouput class="poPaPc">&nbsp;po</ouput>
+				<INPUT class="poPaPc" type="text" size=2><ouput class="poPaPc">&nbsp;pa</ouput>
+				<INPUT class="poPaPc" type="text" size=2><ouput class="poPaPc">&nbsp;pc</ouput>
+			</div>
+		</div>
+		<div class="description" id="affichageAide">
+			<p>Voici l'aide.
+			</p>
+		</div>
+		<div class="description" id="affichageForce">
+			<p class="textDescription"><strong>FOR (force)</strong><br>La force mesure la puissance musculaire. Plus elle est élevée, plus le personnage réussira des prouesses physiques. Certaines armes et armures demandent une valeur de FOR minimum pour être utilisées.
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichagePerception">
+			<p class="textDescription"><strong>PER (perception)</strong><br>La perception représente la sensibilité et la vigilance du personnage à l'environnement qui l'entoure, pouvant l'alerter d'éventuels dangers.
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageIntelligence">
+			<p class="textDescription"><strong>INT (intelligence)</strong><br>L’intelligence représente l’intensité du pouvoir du héros et la probabilité de l’exploité au meilleur de son potentiel.
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageAgilite">
+			<p class="textDescription"><strong>AGI (agilite)</strong><br>L’agilité mesure l’adresse physique. Elle représente la maîtrise de son propre corps. 
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageDexterite">
+			<p class="textDescription"><strong>DEX (dexterite)</strong><br>La dextérité mesure la manipulation physique et magique. Elle détermine la facilité avec laquelle le personnage manipule un objet physique ou magique, tel que les couteaux ou bien les runes. 
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageEsprit">
+			<p class="textDescription"><strong>ESP (esprit)</strong><br>L’esprit mesure l’adresse magique. Il représente le contrôle de votre pouvoir et de vos réflexes magiques. Même le plus petit des pouvoirs est redoutable avec de l’esprit.
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageCharisme">
+			<p class="textDescription"><strong>CHA (charisme)</strong><br>Le charisme est important pour les interactions sociales ou pour faire une bonne première impression. 
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageMoral">
+			<p class="textDescription"><strong>MOR (moral)</strong><br>Le moral représente le mental. Elle mesure la vigilance et la capacité de résister aux capacités adverses.
+			</p>
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichageEndurance">
+			<p class="textDescription"><strong>END (endurance)</strong><br>L’endurance représente la vie du héros. Plus sont endurance est haute, plus le héros peut supporter une quantité importante de dégâts. 
+			</p>
+		</div>
+		<div class="description" id="affichageResistance">
+			<p class="textDescription"><strong>REP (resistance physique)</strong><br>La résistance physique représente la constitution physique. Elle mesure la capacité à absorber ou éviter les dégâts physiques. Plus elle est élevée, plus il sera difficile de vous blesser physiquement
+			</p>
+			<p class="textDescription"><strong>REM (resistance magique)</strong><br>La résistance magique représente la constitution magique. Elle mesure la capacité à absorber les dégâts magiques. Plus elle est élevée, plus il sera difficile de vous blesser magiquement.
+			</p>
+		</div>
+		<div class="description" id="affichageResilience">
+			<p class="textDescription"><strong><i>Le niveau de difficulté de base</i></strong><br>En vous aidant du tableau ci-dessous, vous pouvez aisément déterminer le niveau de difficulté de l’action entreprise.
+			</p>
+			<img class="tableauValeurDifficulte" src="tableauValeurDifficulte.png">
+		</div>
+		<div class="description" id="affichagePuissancePhysique">
+			<p class="textDescription"><strong>PUP (puissance physique)</strong><br>La puissance physique  représente la capacité à infliger des dégâts de type physique. Les personnages puisent dans leur Puissance Physique pour effectuer des actions physiques.
+			</p>
+		</div>
+		<div class="description" id="affichagePuissanceNeutre">
+			<p class="textDescription"><strong>PUN (puissance neutre)</strong><br>La puissance neutre représente la capacité à infliger des dégâts de type physique ou magique. Les personnages peuvent puiser dans leur Puissance Neutre pour effectuer des actions physiques ou magiques.
+			</p>
+		</div>
+		<div class="description" id="affichagePuissanceMagique">
+			<p class="textDescription"><strong>PUM (puissance magique)</strong><br>La puissance magique représente la capacité à infliger des dégâts de type magique. Les personnages puisent dans leur Puissance Magique pour effectuer des actions magiques.
+			</p>
+		</div>
+	</div>
+	<div>
+		<div class="imgIcon" id="equipement" value="off"><img src="default2.png">
+		</div>
+		<div class="imgIcon" id="classe" value="off"><img src="default2.png">
+		</div>
+		<div class="imgIcon" id="lore" value="off"><img src="default2.png">
+		</div>
+		<div class="imgIcon" id="metier" value="off"><img src="default2.png">
+		</div>
+		<div class="imgIcon" id="sac" value="off"><img src="default2.png">
+		</div>
+		<div class="imgIcon" id="aide" value="off"><img src="default2.png">
+		</div>
+	</div>
+
+</main>
+<script src="WOWD6JS2.js">
+</script>
+</body>
+</html>

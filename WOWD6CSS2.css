@@ -1,0 +1,714 @@
+body {
+cursor: url(cursorOff.png), auto;
+background-image: url(black.jpg);
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-color: rgba(0,0,0,0);
+margin: 0px;
+}
+
+.selectSac {
+height: 335px;
+width: 296px;
+background: content-box;
+color: #ebdec2;
+scrollbar-width: none;
+position: relative;
+top: 30px;
+}
+
+input:hover {
+cursor: url(cursorOn.png), auto;
+}
+
+select:hover {
+cursor: url(cursorOn.png), auto;
+}
+
+.ecrireValeurSac {
+color: #ebdec2;
+background: content-box;
+}
+
+.descriptionSort {
+display: flex;
+}
+
+.selectSort {
+position: relative;
+top: 10px;
+left: 10px;
+}
+
+.selectionEtDescription {
+background-image: url(miniCadre.png);
+background-repeat: no-repeat;
+height: 120px;
+width: 225px;
+}
+
+.cadreAttribut {
+background-image: url(miniCadreAttribut.png);
+background-repeat: no-repeat;
+height: 53px;
+width: 68px;
+position: relative;
+top: -20px;
+color: #ebdec2;
+}
+
+.cadreAttributArme {
+background-image: url(miniCadreAttribut.png);
+background-repeat: no-repeat;
+height: 68px;
+width: 68px;
+position: relative;
+top: -5px;
+color: #ebdec2;
+}
+
+.nomAttribut {
+position: relative;
+top: 15px;
+text-align: center;
+color: #ebdec2;
+font-weight: bold;
+}
+
+.nomAttributArmure {
+position: relative;
+top: 9px;
+text-align: center;
+color: #ebdec2;
+font-weight: bold;
+font-size: 14px;
+}
+
+.descriptionArmure {
+position: relative;
+left: -4px;
+color: #a69898;
+font-size: 12px;
+margin: 12px;
+}
+
+.bonusToucherEtResistance {
+display: flex;
+font-weight: bold;
+text-align: center;
+color: #a69898;
+font-size: 12px;
+position: relative;
+top: 8px;
+left: 13px;
+}
+
+.bonusToucherArme {
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+color: #ebdec2;
+position: relative;
+top: -12px;
+left: -5px;
+}
+
+.pEtM {
+font-size: 8px;
+font-weight: bold;
+text-align: center;
+color: #ebdec2;
+position: relative;
+top: -12px;
+left: -5px;
+height: 6px;
+}
+
+.tEtR {
+font-size: 8px;
+font-weight: bold;
+text-align: center;
+color: #ebdec2;
+position: relative;
+top: -9px;
+left: -6px;
+width: 19px;
+}
+
+.pEtMEtTEtR {
+position: relative;
+top: -20px;
+left: -6px;
+font-size: 10px;
+}
+
+.bonusResistanceArme {
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+color: #ebdec2;
+position: relative;
+top: -24px;
+left: -5px;
+}
+
+.texteSac {
+position: relative;
+color: #ebdec2;
+width: 86px;
+height: 6px;
+left: 21px;
+top: 5px;
+}
+
+.valeurSac {
+position: relative;
+top: 12px;
+left: -14px;
+}
+
+.dispositionSac {
+position: relative;
+top: 20px;
+height: 20px;
+left: 6px;
+}
+
+.poPaPc {
+position: relative;
+top: 40px;
+background: content-box;
+color: #ebdec2;
+height: 15px;
+left: 60px;
+width: 24px;
+text-align: end;
+}
+
+.textDescriptionSortStatique {
+position: relative;
+left: 10px;
+color: #ebdec2;
+width: 55px;
+font-size: 15px;
+}
+
+.textDescriptionSortModifiable {
+position: relative;
+left: -4px;
+text-align: end;
+width: 55px;
+color: #a69898;
+font-size: 15px;
+}
+
+.textDescriptionArmeStatique {
+position: relative;
+left: 10px;
+color: #ebdec2;
+width: 110px;
+font-size: 18px;
+}
+
+.textDescriptionArmeModifiable {
+position: relative;
+left: -4px;
+text-align: end;
+width: 110px;
+color: #a69898;
+font-size: 18px;
+}
+
+.cadreDescriptionSort {
+background-image: url(miniCadreDescription.png);
+background-repeat: no-repeat;
+position: relative;
+top: -22px;
+left: 5px;
+height: 115px;
+width: 292px;
+}
+
+.descriptionEffetSort {
+position: relative;
+top: 8px;
+left: 10px;
+color: #a69898;
+width: 275px;
+}
+
+.imageEtDescriptionEquipement {
+display: flex;
+position: relative;
+top: 18px;
+left: 4px;
+}
+
+.positionNombre {
+position:relative;
+top : 16px;
+}
+
+.textDescription {
+margin: 1em;
+color: #ebdec2;
+font-family: Open Sans,Arial,Helvetica,sans-serif;
+text-shadow: 0 0 1px transparent,0 1px 2px rgba(0,0,0,.8);
+}
+
+.statNom {
+position: relative;
+font-weight: lighter;
+left: 15px;
+width: 28px;
+color: #ebdec2;
+font-size: smaller;
+}
+
+.statToucher {
+position: relative;
+font-weight: lighter;
+left: 15px;
+width: 28px;
+color: #ebdec2;
+font-size: smaller;
+}
+
+.statBaseToucher {
+position: relative;
+font-weight: lighter;
+top : -6px;
+left: 10px;
+width: 28px;
+color: #ebdec2;
+font-size: smaller;
+}
+
+.statNomPuissance {
+position: relative;
+font-weight: lighter;
+top : -6px;
+left: 10px;
+width: 28px;
+color: #ebdec2;
+font-size: smaller;
+}
+
+.statPuissance {
+position: relative;
+top : 8px;
+left : 19px;
+font-size: 150%;
+}
+
+.statResistanceResilience {
+position: relative;
+top : 32px;
+left : -5px;
+font-size: 150%;
+}
+
+.statArmure {
+position: relative;
+top : -10px;
+left : 10px;
+}
+
+.textStatModifie {
+position:relative;
+font-weight: bold;
+left: 15px;
+width: 28px;
+color: #ebdec2;
+}
+
+.textStatModifieResistanceResilience {
+position:relative;
+font-weight: bold;
+top: 12px;
+left: -11px;
+color: #ebdec2;
+}
+
+.textStatModifieToucher {
+position:relative;
+font-weight: bold;
+top: -18px;
+left: 44px;
+width: 28px;
+color: #ebdec2;
+}
+
+.statResistancePlus {
+position:relative;
+font-weight: bold;
+top: -14px;
+left: 24px;
+color: #ebdec2;
+}
+
+.statResistanceBonus {
+position:relative;
+font-weight: bold;
+top: -11px;
+left: 40px;
+color: #a69898;
+}
+
+.statResistanceResilienceTotal {
+position:relative;
+font-weight: bold;
+top: -47px;
+left: 104px;
+color: #a69898;
+}
+
+.miniFlecheHaut:hover {
+transform: scale(1.2);
+transition: transform 0.2s;
+cursor: url(cursorOn.png), auto;
+}
+
+.miniFlecheBas:hover {
+transform: scale(1.2);
+transition: transform 0.2s;
+cursor: url(cursorOn.png), auto;
+}
+
+.miniFlecheHautPuissance:hover {
+transform: scale(1.2);
+transition: transform 0.2s;
+cursor: url(cursorOn.png), auto;
+}
+
+.miniFlecheBasPuissance:hover {
+transform: scale(1.2);
+transition: transform 0.2s;
+cursor: url(cursorOn.png), auto;
+}
+
+.imgIcon {
+background: url(default2.png);
+height: 68px;
+width: 68px;
+}
+
+.imgIcon:hover {
+transform: scale(1.1);
+transition: transform 0.2s;
+cursor: url(cursorOn.png), auto;
+}
+
+.stat {
+display: flex;
+}
+
+.cadreStat {
+background: url(cadreStat.png);
+height: 68px;
+width: 120px;
+}
+
+.boxes {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.selectionEquipement {
+position: relative;
+top: 18px;
+left: 4px;
+}
+
+.equipementArmure {
+display: flex;
+}
+
+.emblemeClasse {
+transform: scale(0.7);
+margin: auto;
+display: block;
+}
+
+.imageArmure {
+transform: scale(1);
+margin: auto;
+display: block;
+}
+
+.tableauValeurDifficulte {
+margin: auto;
+display: block;
+}
+
+.espace {
+background: url(espace.png);
+height: 25px;
+width: 25px;
+}
+
+.description {
+overflow-y: scroll;
+scrollbar-width: none;
+position: relative;
+top: 36px;
+margin: 28px;
+height: 470px;
+width: 295px;
+}
+
+.statBase {
+display: flex;
+height: 20px;
+}
+
+.statSpecialToucher {
+height: 3px;
+position: relative;
+top: -16px;
+}
+
+.statModifie {
+display: flex;
+height: 20px;
+}
+
+
+.statBaseDe {
+position: relative;
+left: 15px;
+color: #ebdec2;
+}
+
+.statBaseEntre {
+position: relative;
+left: 15px;
+color: #ebdec2;
+}
+
+.statBasePip {
+position: relative;
+left: 15px;
+color: #ebdec2;
+}
+
+.statModifieDe {
+position: relative;
+left: 15px;
+font-weight: bold;
+color: #ebdec2;
+}
+
+.statModifieEntre {
+position: relative;
+left: 15px;
+font-weight: bold;
+color: #ebdec2;
+}
+
+.statModifiePip {
+position: relative;
+left: 15px;
+font-weight: bold;
+color: #ebdec2;
+}
+
+.miniFlecheHaut {
+position: relative;
+top: 10px;
+left: 64px;
+}
+
+.miniFlecheBas {
+position: relative;
+top: 18px;
+left: 27px;
+}
+
+.miniFlecheHautPuissance {
+position: relative;
+top: 9px;
+left: 36px;
+}
+
+.miniFlecheBasPuissance {
+position: relative;
+top: 39px;
+left: 12px;
+}
+
+#barre {
+background-image: url(barre.png);
+background-repeat: repeat;
+background-size: ;
+height: 1.5em;
+}
+
+#nomDuJoueur {
+background-image: url(nomDuJoueur3.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+align-items: center;
+justify-content: center;
+height: 86px;
+width: 564px;
+}
+
+#barreDeSeparation {
+background-image: url(barre2.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+align-items: center;
+justify-content: center;
+height: 15px;
+width: 564px;
+}
+
+#imgTexte {
+background-image: url(cadre2.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-origin: content-box;
+height: 35em;
+width: 22em;
+}
+
+#backgroundStat {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 0px;
+}
+
+#statIconForce {
+background-image: url(FOR.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconAgilite {
+background-image: url(AGI.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconCharisme {
+background-image: url(CHA.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconToucher {
+background-image: url(toucher.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconPerception {
+background-image: url(PER.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconDexterite {
+background-image: url(DEX.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconIntelligence {
+background-image: url(INT.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconEsprit {
+background-image: url(ESP.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconMoral {
+background-image: url(MOR.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconResistance {
+background-image: url(RET.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconEndurance {
+background-image: url(END.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconResilience {
+background-image: url(toucher2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconPuissancePhysique {
+background-image: url(puissancePhysique.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconPuissanceNeutre {
+background-image: url(puissanceNeutre.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#statIconPuissanceMagique {
+background-image: url(puissanceMagique.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#metier {
+background-image: url(metier.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#equipement {
+background-image: url(equipement.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#classe {
+background-image: url(classe.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#lore {
+background-image: url(competence.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#sac {
+background-image: url(sac.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#aide {
+background-image: url(aide.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
